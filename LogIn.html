@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Get Fit Online</title>
+   <link href="BootStrap/css/bootstrap.css" rel="stylesheet" />
+   <link href="StyleSheets/Main.css" rel="stylesheet" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class = "container">
+		<img src="Images\gym.png" class="img-responsive center-block" alt="gym img">
+	</div>
+	<div  class="container text-center">
+		<form id = "loginform" action = "http://localhost:81/GFO/LogIn.php" method = "post">
+			<div>
+				<div class = "row">
+					<div class = "col-sm-4"></div>
+					<div class = "col-sm-4">
+						<div class="form-group">
+							<label for="text" style= "font-size: 25px;">Username:</label>
+							<input type="text" name = "username" class="form-control text-center"  required id="username" >
+						</div>
+						<div class="form-group">
+							<label for="pwd" style= "font-size: 25px;">Password:</label>
+							<input type="password" name = "password" class="form-control text-center" id="password" required>
+						</div>
+						<button type="submit" name = "submit" id = "login"  style = "width: 100%;margin-top:5px;font-size:20px;" class="btn btn-primary">Log In</button>
+					</div>
+					<div class = "col-sm-4"></div>
+				</div>	
+			</div>	
+		</form>		
+		<div class = "container" style="width: 100%;">
+			<div style = "font-size: 25px;">
+				<p><span class="glyphicon glyphicon-map-marker"></span> Athens, GR</p>
+				<p><span class="glyphicon glyphicon-phone"></span>Phone: +00 11111111</p>
+				<p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</br></br></br></p> 
+			</div>
+			<div>
+				<img src = "Images\map.jpg" class = "img img-responsive"></img>
+				</br></br></br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

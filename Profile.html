@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Get Fit Online</title>
+		<link href="BootStrap/css/bootstrap.css" rel="stylesheet" />
+		<link href="StyleSheets/Profile.css" rel="stylesheet" />
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	</head>
+  
+<body id = "myPage">
+    <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#myPage">Get Fit Online</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://localhost:81/gfo/main.html#mypage">HOME</a></li>
+					<li><a href="http://localhost:81/gfo/main.html#gym">GYM</a></li>
+					<li><a href="#">MY PROFILE</a></li>					
+					<li><a href="http://localhost:81/gfo/main.html#here">SERVICES</a></li>
+					<li><a href="#theproducts">PRODUCTS</a></li>  
+					<li><a href="#contact">CONTACT</a></li>
+					<li><a href="http://localhost:81/gfo/logout.php">LOG OUT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	
+	
+	<div  class = "container logo" style = "  margin-top: 120px;margin-bottom:0px;">
+		<img src="Images\gym.png" class="img-responsive" alt="gym img" style="margin: 0 auto; padding-top: 15px;">
+	</div>
+	
+	<div  class = "text-center">
+				<img class = "social" src="Images\facebook.png" class="img-responsive" alt="facebook" style="margin: 0 auto;" >
+				<img class = "social" src="Images\twitter.png" class="img-responsive" alt="twitter" style="margin: 0 auto;" >
+				<img class = "social" src="Images\youtube.png" class="img-responsive" alt="youtube" style="margin: 0 auto;" >
+	</div>
+	
+	<div  id = "trafficC" class = "container text-center">
+		<div id = "trafficj" class = "jumbotron">	
+				<h2>Gym's traffic:</h2>
+				<button id = "trafficbutton"></button>
+				<h3 id = "trafficinfo"></h3>
+		</div>
+	</div>
+	
+	<div class = "container">
+		<h1 id = "perStats" class = "text-center">Personal Stats</h1>
+		<button id = "addmeasure" class = "btn btn-primary">Add Measure</button>
+		<div class = "jumbotron text-center" id = "formmeasure">
+				<div class = "row">
+					<div class = "col-sm-3"></div>
+					<div class = "col-sm-3 text-right">
+						<label for = "weight">Weight (kg): </label>
+						</br>
+						<label for = "weight">Fat (%): </label>	
+					</div>
+					<div class = "col-sm-3 text-left">
+						<input id = "measweight" type="text" name = "weight"></input>
+						</br>
+						<input id = "measfat" type="text" name = "fat"></input>
+					</div>
+					<div class = "col-sm-3"></div>
+				</div>
+				</br>
+				<button id = "addmeasure1" type="submit" class="btn btn-success text-center">Add Measure</button>
+		</div>
+	</div>	
+	<div class = "container">
+		<div class="row  text-center">
+			<div class="col-sm-6">
+				<canvas id="weightstat" height = "100">Weight</canvas>
+			</div>
+			<div class="col-sm-6">
+				<canvas id="fatiguestat" height = "100">Fatigue</canvas>
+			</div>
+		</div>
+		<div id = "secondStats" class="row">
+			<div class="col-sm-6">
+				<canvas id="preWeek" height = "100"></canvas>
+			</div>
+			<div class="col-sm-6">
+				<canvas id="exeStat" height = "100"></canvas></br>
+			</div>
+		</div>
+		<div class= "container text-center">
+			<div class="dropdown">
+				<button id = "buttStat" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Exercise <span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li class = "stats benchpress">Bench Press</li>
+						<li class = "stats pullups">Pull Ups</li>
+						<li class = "stats deadlift">Deadlift</li>
+						<li class = "stats romaniandeadlift">Romanian Deadlift</li>
+						<li class = "stats shrugs">Shrugs</li>
+						<li class = "stats tbarrow">T bar Row</li>
+						<li class = "stats bentoverrow">Bent over Row</li>
+						<li class = "stats inclinedumbell">Incline Dumbell</li>
+						<li class = "stats shoulderpress">Shoulder Press</li>
+						<li class = "stats onearmdumbell">One Arm dumbell </li>
+						<li class = "stats latteralraise">Latteral Raise</li>
+						<li class = "stats bicepcurls">Bicep Curls</li>
+						<li class = "stats hammercurls">Hammer Curls</li>
+						<li class = "stats preachercurls">Preacher Curls</li>
+						<li class = "stats skullcrushers">Skull Crashers</li>
+						<li class = "stats triceppushdown">Tricep Push-Down</li>
+						<li class = "stats flyes">Flyes</li>
+						<li class = "stats squats">Squats</li>
+						<li class = "stats legextensions">Leg Extensions</li>
+						<li class = "stats legraises">Leg Raises</li>
+						<li class = "stats legcurls">Leg Curls</li>
+						<li class = "stats legpress">Leg Press</li>
+						<li class = "stats lunges">Lunges</li>
+						<li class = "stats calfraises">Calf Raises</li>
+					</ul>
+			</div>
+			<button id = "clearStat" class="btn btn-primary" style = "font-size: 20px;">Clear Exercise Stat</button>
+		</div>
+	</div>
+	
+	<div class= "container text-center">
+		<div class = "jumbotron" >
+			<h1 style = "font-size: 40px;"><b>Recomended Plans</b></h1>
+			</br>
+			<p id = "plans">We strongly suggest you check our exercise plans we created especially for your goal!! </br>Click <a href = "http://localhost:81/gfo/Recommended.html"><i> here</i></a> for more!</p>
+			<div class= "text-center">
+				<img id = "planpic" src = "Images\plans.jpg" class = "img img-responsive" alt = "gym picture"></img>
+			</div>
+		</div>
+	</div>
+	
+	<div id = "exercises" class = "container">
+		<h1 class = "text-center">Insert Exercises</h1>
+		<div class="row  text-center">
+			<div class="col-sm-4">
+				<ul id = "exchoices">
+					<li>
+						<div class="dropdown">
+							<h2>Body</h2>
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Exercise <span class="caret"></span></button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li id = "benchpress">Bench Press</li>
+								<li id = "pullups">Pull Ups</li>
+								<li id = "deadlift">Deadlift</li>
+								<li id = "romaniandeadlift">Romanian Deadlift</li>
+								<li id = "shrugs">Shrugs</li>
+								<li id = "tbarrow">T bar Row</li>
+								<li id = "bentoverrow">Bent over Row</li>
+								<li id = "inclinedumbell">Incline Dumbell</li>
+								<li id = "flyes">Flyes</li>
+							</ul>
+						</div> 
+					</li>
+					<li>
+						<div class="dropdown">
+							<h2>Arms</h2>
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Exercise <span class="caret"></span></button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li id = "shoulderpress">Shoulder Press</li>
+								<li id = "onearmdumbell">One Arm dumbell </li>
+								<li id = "latteralraise">Latteral Raise</li>
+								<li id = "bicepcurls">Bicep Curls</li>
+								<li id = "hammercurls">Hammer Curls</li>
+								<li id = "preachercurls">Preacher Curls</li>
+								<li id = "skullcrushers">Skull Crashers</li>
+								<li id = "triceppushdown">Tricep Push-Down</li>
+							</ul>
+						</div> 
+					</li>
+					<li>
+						<div class="dropdown">
+							<h2>Legs</h2>
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Exercise <span class="caret"></span></button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li id = "squats">Squats</li>
+								<li id = "legextensions">Leg Extensions</li>
+								<li id = "legraises">Leg Raises</li>
+								<li id = "legcurls">Leg Curls</li>
+								<li id = "legpress">Leg Press</li>
+								<li id = "lunges">Lunges</li>
+								<li id = "calfraises">Calf Raises</li>
+							</ul>
+						</div> 
+					</li>
+					<div><span id = "exeinfo" class="glyphicon glyphicon-info-sign"></span></div>
+				</ul>
+			</div >
+				
+			<div class="col-sm-6">
+				<img id = "picexercise" src = "Images/gymback.jpg" />
+				<div class = "row text-center">
+					<div class="col-sm-4">
+						<label class = "showexe" for="text" >Sets</label>
+						<input id = "exsets" type="text" name = "sets" class="form-control text-center"> 
+					</div>
+					<div class="col-sm-4">
+						<label class = "showexe" for="text">Reps</label>
+						<input id = "exereps" type="text" name = "reps" class="form-control text-center">				
+					</div>
+					<div class="col-sm-4">
+						<label class = "showexe" for="text" >Weight(kg)</label>
+						<input id = "exeweight" type="text" name = "weigth" class="form-control text-center"> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class = "text-center" id = "exinfo">First choose an exercise.. Compare and be sure that you chose corrent</br>Then fill reps, weight and submit you exersice!</p>
+		<p id = "rememberexe"></p>
+		<div id = "submitexercise" class = "text-center">
+			<button id = "submitexe" class="btn btn-primary" type="button">Add Exercise </button>
+			<div id = "submitexesucc" class="alert alert-success">
+				<strong>Success!</strong> Your exercise submited succesfully!!
+			</div>
+		</div>
+		<div class = "container" style= "margin-top: 0px;margin-bottom:0px;">
+		<div class = "jumbotron" style= "background-color: transparent;margin-bottom: 0px;">
+			<ol id = "checkedexes">
+			</ol>
+			<button id = "submitall" class="btn btn-primary" type="button">Submit All Exercises</button>
+			</div>
+		</div>
+	</div>
+	
+	<div id = "theproducts" class = "container servicestitle">
+		<div class = "jumbotron servicestitle">
+			<h2 id = "productinfo">PRODUCTS</h2>
+		</div>
+		<h4 id = "showbuyoption"><span class="glyphicon glyphicon-info-sign" ></span> You can buy a product... Just click on it!! </h4>
+	</div>
+
+	<div id = "product" class = "container servicetitle">
+		<table id = "products" class="table table-hover table-bordered">
+			<thead>
+				<tr>
+				<th class = "tabled">Name</th>
+				<th class = "tabled">Price <span class="glyphicon glyphicon-euro"></span></th>
+				<th class = "tabled">Description</th>
+				<th class = "tabled">Purchases</th>
+				<th class = "tabled">Rating <span class="glyphicon glyphicon-star"></span></th>
+				</tr>
+			</thead>
+			<tbody id = "produc">
+				<tr></tr>
+			</tbody>
+		</table>
+	</div>
+		
+	<div class="container">
+		<h2 class="text-center">Contact Us..</h2>
+		<h4 class="text-center"><em>We would like to hear from you!</em></h4>
+		</br>
+		</br>
+		<div id = "contact" class="row test">   
+			<div class="col-md-4">
+				<div class = "jumbotron contact">
+					<p class ="text-center"></br></br><em>Working hours:</em> <code style = "background-color: transparent; color: inherit;"></br><b>8:00 - 00:00</b></code></br></p>
+					<p><span class="glyphicon glyphicon-map-marker"></span> Athens, GR</p>
+					<p><span class="glyphicon glyphicon-phone"></span>Phone: +00 11111111</p>
+					<p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p> 
+				</div>
+			</div>
+			<div class="col-md-4">
+				<form>
+					<div class="form-group text-center">	
+						<div class="row lead">
+							<label id= "rate" for="text">Rate Us:</br></label>
+							<div id="stars" class="starrr"></div>
+							<button id = "submit" type="submit" class="btn btn-success text-center">Submit</button>
+						</div>
+					</div>
+				</form>	
+			</div>
+			<div class="col-md-4 form-group">
+				</br>
+				</br>
+				</br>
+				<label for="comment">Comment:</label>
+				<textarea id = "comment" class="form-control" rows="5" id="comment"></textarea>
+			</div>	
+		</div>
+	</div>
+	
+	<div class = "container">
+		<img src = "Images\map.jpg" class = "img img-responsive"></img>
+		</br></br></br>
+	</div>
+	
+	<footer class="text-center">
+		<a class="up-arrow" href="#myPage"  title="TO TOP">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a><br><br>
+		<p>Website created for G.F.O project for AUEB!!</p> 
+	</footer>
+	<script src="JS\Profile.js"></script>
+</body>
+</html>

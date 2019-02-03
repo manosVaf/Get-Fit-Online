@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Get Fit Online</title>
+		<link href="BootStrap/css/bootstrap.css" rel="stylesheet" />
+		<link href="StyleSheets/Recommended.css" rel="stylesheet" />
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	</head>
+  
+<body>
+    <div  class = "container logo" style = "  margin-top: 20px;margin-bottom:0px;">
+		<img src="Images\gym.png" class="img-responsive" alt="gym img" style="margin: 0 auto; padding-top: 15px;">
+	</div>
+	
+	<div  class = "text-center" style = "margin-bottom:20px;">
+				<img class = "social" src="Images\facebook.png" class="img-responsive" alt="facebook" style="margin: 0 auto;" >
+				<img class = "social" src="Images\twitter.png" class="img-responsive" alt="twitter" style="margin: 0 auto;" >
+				<img class = "social" src="Images\youtube.png" class="img-responsive" alt="youtube" style="margin: 0 auto;" >
+	</div>
+	
+	<div class = "container">
+		<div class = "jumbotron">
+			<ol class = "plans">
+				<h2>Plan</h2>
+				<h2>30 Day Strength</h2>
+					<h2>Parts</h2>
+					<ol class = "parts"> 
+						<h3><li>Push Day </li></h3>
+						<ol class = "exes">
+							<h4><li>Bench Press Sets: 5 Reps: 8 </li></h4>
+							<h4><li>Trishep Pushdown Sets: 5 Reps: 8 </li></h4>
+							<h4><li>Barbel Press Sets: 5 Reps: 8 </li></h4>
+							<h4><li>Incline Barbel Press Sets: 5 Reps: 8 </li></h4>
+							<h4><li>Dips Sets: 5 Reps: 8 </li></h4>
+						</ol>
+						<h3><li>Pull Day </li></h3>
+						<ol class = "exes">
+							<h4><li>Pull Ups Sets: 3 Reps: 12 </li></h4>
+							<h4><li>Barbel Curl Sets: 3 Reps: 12 </li></h4>
+							<h4><li>T Bar Row Sets: 4 Reps: 8 </li></h4>
+							<h4><li>Pendlay Row Sets: 3 Reps: 12 </li></h4>
+						</ol>
+						<h3><li>Leg Day </li></h3>
+						<ol class = "exes">
+							<h4><li>Squat  Sets: 2 Reps: 20 </li></h4>
+							<h4><li>DeadLift  Sets: 2 Reps: 20 </li></h4>
+							<h4><li>Front Squat Sets: 2 Reps: 20 </li></h4>
+						</ol>
+					</ol>
+			</ol>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class = "container">
+		<div class = "jumbotron">
+		<div class = "row">
+			<div class="col-sm-4">
+				<ul id = "exchoices">
+					<li>
+						<div class="dropdown">
+							<h2>Body</h2>
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Exercise <span class="caret"></span></button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li id = "benchpress">Bench Press</li>
+								<li id = "pullups">Pull Ups</li>
+								<li id = "deadlift">Deadlift</li>
+								<li id = "romaniandeadlift">Romanian Deadlift</li>
+								<li id = "shrugs">Shrugs</li>
+								<li id = "tbarrow">T bar Row</li>
+								<li id = "bentoverrow">Bent over Row</li>
+								<li id = "inclinedumbell">Incline Dumbell</li>
+								<li id = "flyes">Flyes</li>
+							</ul>
+						</div> 
+					</li>
+					<li>
+						<div class="dropdown">
+							<h2>Arms</h2>
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Exercise <span class="caret"></span></button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li id = "shoulderpress">Shoulder Press</li>
+								<li id = "onearmdumbell">One Arm dumbell </li>
+								<li id = "latteralraise">Latteral Raise</li>
+								<li id = "bicepcurls">Bicep Curls</li>
+								<li id = "hammercurls">Hammer Curls</li>
+								<li id = "preachercurls">Preacher Curls</li>
+								<li id = "skullcrushers">Skull Crashers</li>
+								<li id = "triceppushdown">Tricep Push-Down</li>
+							</ul>
+						</div> 
+					</li>
+					<li>
+						<div class="dropdown">
+							<h2>Legs</h2>
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Exercise <span class="caret"></span></button>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li id = "squats">Squats</li>
+								<li id = "legextensions">Leg Extensions</li>
+								<li id = "legraises">Leg Raises</li>
+								<li id = "legcurls">Leg Curls</li>
+								<li id = "legpress">Leg Press</li>
+								<li id = "lunges">Lunges</li>
+								<li id = "calfraises">Calf Raises</li>
+							</ul>
+						</div> 
+					</li>
+				</ul>
+			</div >
+			<div class = "col-sm-8">
+				<img id = "picexercise" src = "Images/gymback.jpg"/>
+			</div>
+			</div>
+		</div>	
+	</div>
+	<script src="JS\Recommended.js"></script>
+</body>
+</html>

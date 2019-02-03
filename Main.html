@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Get Fit Online</title>
+	<meta charset="UTF-8"> 
+	<link href="BootStrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="StyleSheets/Main.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+<body id = "myPage">
+    <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#myPage">Get Fit Online</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#myPage">HOME</a></li>
+					<li><a href="#gymtext">GYM</a></li>
+					<li><a href="http://localhost:81/gfo/checkLogged.php">MY PROFILE</a></li>					
+					<li><a href="#here">SERVICES</a></li>
+					<li><a href="#products">PRODUCTS</a></li>  
+					<li><a href="#contact">CONTACT</a></li>
+					<li><a href="http://localhost:81/gfo/checkLogged.php">LOG IN</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div  class = "container logo">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="Images\gym.png" class="img-responsive" alt="gym img" style="padding-top: 15px;">
+			</div>
+			<div id = "welcome" class="col-sm-6 text-center">
+				<h2>Welcome to our website
+				</h2>
+				<h4>Please <code class = "text" style = "background-color: transparent;"><a href="http://localhost:81/gfo/checkLogged.php">LOG IN</a></code> for personal stats!!</h4>
+				<img class = "social" src="Images\facebook.png" class="img-responsive" alt="facebook">
+				<img class = "social" src="Images\twitter.png" class="img-responsive" alt="facebook">
+				<img class = "social" src="Images\youtube.png" class="img-responsive" alt="facebook">
+			</div>
+		</div>
+	</div>
+	<div id = "gymtext">
+		<canvas id = "mycanvas"></canvas>
+		<div class = "container" id= "text">
+			<div class = "jumbotron" >
+				<h1>THE GYM<h1>
+				<h2>Partner with personal trainers at the Get Fit Online</br>and focus on achieving specific goals</h2></br>
+				<p class = "lead">Get Fit Online stocks the very latest cardio equipment, such as elliptical machines, stair climbers, rowers, treadmills and stationary bikes as well as a full sets of free weights and high tech strength training equipment.
+We offer options for every fitness level, from beginning exercisers to elite athletes looking to sharpen their speed, agility, power and endurance. Our inspirational fitness experts can assist you with a low-impact workout designed specifically for seniors, or show you the right techniques for a high intensity workout for both men and women.</p>
+			
+			<h2 class ="text-center"></br></br><b><em>Working hours:</b></em> <code style = "background-color: transparent; color: inherit;">8:00 - 00:00</code></br></h2>
+			</div>
+		</div>	
+	</div>
+	<div  id = "here" class = "container servicestitle">
+		<div class = "jumbotron servicestitle">
+			<h1>SERVICES<h1>
+		</div>
+	</div>
+	<div id = "services" class = "container">		
+		<div class="row  text-center">
+			<div class="col-sm-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">PILATES</div>
+					<div class="panel-body">Days <span class="glyphicon glyphicon-calendar"></span> : Every Day</div>
+					<div class="panel-body">Time <span class="glyphicon glyphicon-time"></span> : 9:00 - 11:00 | 19:00 - 21:00</div>
+					<div class="panel-body">Ticket: <b>2</b>  <span class="glyphicon glyphicon-euro"></span> </div>
+					<button id = "btninfo1" type="button" class="btn btninfo btn-primary" onclick="fade(this)">More Info</button>
+					<p id="myHeader1" class = "phide">6976891445</br></p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">TAE KWON DO</div>
+					<div class="panel-body">Days <span class="glyphicon glyphicon-calendar"></span> : Tuesday, Friday, Saturday</div>
+					<div class="panel-body">Time <span class="glyphicon glyphicon-time"></span> : 11:00 - 13:00</br><span style="display:inline-block; width: 60px;"></span>21:00 - 23:00</div>
+					<div class="panel-body">Ticket: <b>10</b> <span class="glyphicon glyphicon-euro"></span> </div>
+					<button id = "btninfo2" type="button" class="btn btninfo btn-primary" onclick="fade(this)">More Info</button>
+					<p id="myHeader2" class = "phide">6976891445</br></p>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">TRX</div>
+					<div class="panel-body">Days <span class="glyphicon glyphicon-calendar"></span> : Monday, Wednesday</br><span style="display:inline-block; width: 60px;"></span> Thursday </div>
+					<div class="panel-body">Time <span class="glyphicon glyphicon-time"></span> : 13:00 - 15:00 </br><span style="display:inline-block; width: 60px;"></span>17:00 - 19:00</div>
+					<div class="panel-body">Ticket: <b>8</b> <span class="glyphicon glyphicon-euro"></span></div>
+					<button id = "btninfo3" type="button" class="btn btninfo btn-primary" onclick="fade(this)">More Info</button>
+					<p id="myHeader3" class = "phide">6976891445</br></p>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+				<div id = "hello" class="panel panel-default">
+					<div class="panel-heading">ZUMBA</div>
+					<div class="panel-body">Days <span class="glyphicon glyphicon-calendar"></span> : Every Day</div>
+					<div class="panel-body">Time <span class="glyphicon glyphicon-time"></span> : 15:00 - 17:00 </div>
+					<div class="panel-body">Ticket: <b>4</b> <span class="glyphicon glyphicon-euro"></span> </div>
+					<button id = "btninfo4" type="button" class="btn btninfo btn-primary" onclick="fade(this)">More Info</button>
+					<p id="myHeader4" class = "phide">6976891445</br></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div style= "margin-top: 140px;" class = "container servicestitle">
+		<div class = "jumbotron servicestitle">
+			<h1>PRODUCTS</h1>
+		</div>
+	</div>
+	
+	<div id = "product" class = "container servicetitle">
+		<table id = "products" class="table table-hover table-bordered">
+			<thead>
+				<tr>
+				<th class = "tabled">Name</th>
+				<th class = "tabled">Price <span class="glyphicon glyphicon-euro"></span></th>
+				<th class = "tabled">Description</th>
+				<th class = "tabled">Purchases</th>
+				<th class = "tabled">Rating <span class="glyphicon glyphicon-star"></span></th>
+				</tr>
+			</thead>
+			<tbody id = "produc">
+				<tr></tr>
+				
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="container">
+		<h2 class="text-center">Contact Us..</h2>
+		<h4 class="text-center"><em>We would like to hear from you!</em></h4>
+		</br>
+		</br>
+		<div id = "contact" class="row test">   
+			<div class="col-md-4">
+				<div class = "jumbotron contact">
+					<p class ="text-center"></br></br><em>Working hours:</em> <code style = "background-color: transparent; color: inherit;"></br><b>8:00 - 00:00</b></code></br></p>
+					<p><span class="glyphicon glyphicon-map-marker"></span> Athens, GR</p>
+					<p><span class="glyphicon glyphicon-phone"></span>Phone: +00 11111111</p>
+					<p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p> 
+				</div>
+			</div>
+			<div class="col-md-4">
+				<form>
+					<div class="form-group text-center">	
+						<div class="row lead">
+							<label id= "rate" for="text">Rate Us:</br></label>
+							<div id="stars" class="starrr"></div>
+							<button id = "submit" type="submit" class="btn btn-success text-center">Submit</button>
+						</div>
+					</div>
+				</form>	
+			</div>
+			<div class="col-md-4 form-group">
+				<label for="comment">Comment:</label>
+				<textarea id = "comment" class="form-control" rows="5" id="comment"></textarea>
+			</div>	
+		</div>
+	</div>
+	
+	<div class = "container">
+		<img src = "Images\map.jpg" class = "img img-responsive"></img>
+		</br></br></br>
+	</div>
+	
+	<footer class="text-center">
+		<a class="up-arrow" href="#myPage"  title="TO TOP">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a><br><br>
+		<p>Website created for G.F.O project for AUEB!!</p> 
+	</footer>
+	<script src="JS\Main.js"></script>
+</body>
+</html>
